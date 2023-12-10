@@ -7,25 +7,38 @@ paper = 1
 scissors = 2
 
 # computer
-if num == rock:
+
+if user_input >= 3:
+    print("--Invalid input ☠️--")
+elif num == rock:
     print("Computer Chose: Rock 🪨")
 elif num == paper:
     print("Computer Chose: Paper 📄")
 elif num == scissors:
     print("Computer Chose: Scissors ✂️")
 
+
 # user
 if user_input == rock:
-    print("Use Chose: Rock 🪨")
+    print("Use Chose: Rock 🪨\n")
 elif user_input == paper:
-    print("Use Chose: Paper 📄")
+    print("Use Chose: Paper 📄\n")
 elif user_input == scissors:
-    print("Use Chose: Scissors ✂️")
+    print("Use Chose: Scissors ✂️\n")
 
 # algorithm
-if num == user_input:
+if num == user_input < 3:
     print("--Draw 🙅‍--")
-elif num > user_input:
+
+if num == 0 and user_input == 2:
     print("--Computer 💻 Win 🎉--")
-elif num < user_input:
+
+elif num == 2 and user_input == 0:
     print("--User 😎 Win 🎉--")
+
+elif num > user_input < 3:
+    print("--Computer 💻 Win 🎉--")
+elif num < user_input < 3:
+    print("--User 😎 Win 🎉--")
+
+
