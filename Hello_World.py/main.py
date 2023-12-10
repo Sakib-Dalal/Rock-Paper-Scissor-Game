@@ -40,5 +40,3 @@ elif num > user_input < 3:
     print("--Computer 💻 Win 🎉--")
 elif num < user_input < 3:
     print("--User 😎 Win 🎉--")
-
-
