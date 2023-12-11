@@ -10,22 +10,22 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 password = ""
-final_password = ""
+final_pass = ""
 
 for n in range(0, nr_letters + 1):
-    random_char = random.choice(letters)
-    password = password + random_char
+    rand_char = random.randint(0, len(letters)-1)
+    password = password + letters[rand_char]
 
 for n in range(0, nr_symbols + 1):
-    random_symbol = random.choice(symbols)
-    password = password + random_symbol
+    rand_sym = random.randint(0, len(symbols)-1)
+    password = password + symbols[rand_sym]
 
 for n in range(0, nr_numbers + 1):
-    random_num = random.choice(numbers)
-    password = password + random_num
+    rand_num = random.randint(0, len(numbers)-1)
+    password = password + numbers[rand_num]
 
 for n in password:
-    rand_pass = random.choice(password)
-    final_password = final_password + rand_pass
+    rand = random.randint(0, len(password)-1)
+    final_pass = final_pass + password[rand]
 
-print(f"Your password is: {final_password}")
+print(f"Your password is: {final_pass}")
